@@ -1,0 +1,14 @@
+.background {
+  background-image: url("../../img/background2.jpg");
+  padding: 50px;
+}
+.background-content {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+}
+
+.background-content h1,
+p {
+  color: white;
+}
