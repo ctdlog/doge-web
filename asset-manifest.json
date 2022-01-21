@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/doge-web/static/css/main.fe3870b3.chunk.css",
-    "main.js": "/doge-web/static/js/main.bae4a926.chunk.js",
-    "main.js.map": "/doge-web/static/js/main.bae4a926.chunk.js.map",
+    "main.css": "/doge-web/static/css/main.1335972b.chunk.css",
+    "main.js": "/doge-web/static/js/main.d2028b4e.chunk.js",
+    "main.js.map": "/doge-web/static/js/main.d2028b4e.chunk.js.map",
     "runtime-main.js": "/doge-web/static/js/runtime-main.fb419972.js",
     "runtime-main.js.map": "/doge-web/static/js/runtime-main.fb419972.js.map",
     "static/css/2.0a9ec390.chunk.css": "/doge-web/static/css/2.0a9ec390.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.6d27831a.chunk.js.map": "/doge-web/static/js/2.6d27831a.chunk.js.map",
     "index.html": "/doge-web/index.html",
     "static/css/2.0a9ec390.chunk.css.map": "/doge-web/static/css/2.0a9ec390.chunk.css.map",
-    "static/css/main.fe3870b3.chunk.css.map": "/doge-web/static/css/main.fe3870b3.chunk.css.map",
+    "static/css/main.1335972b.chunk.css.map": "/doge-web/static/css/main.1335972b.chunk.css.map",
     "static/js/2.6d27831a.chunk.js.LICENSE.txt": "/doge-web/static/js/2.6d27831a.chunk.js.LICENSE.txt",
     "static/media/Home.scss": "/doge-web/static/media/background2.a2a14b2d.jpg"
   },
@@ -18,7 +18,7 @@
     "static/js/runtime-main.fb419972.js",
     "static/css/2.0a9ec390.chunk.css",
     "static/js/2.6d27831a.chunk.js",
-    "static/css/main.fe3870b3.chunk.css",
-    "static/js/main.bae4a926.chunk.js"
+    "static/css/main.1335972b.chunk.css",
+    "static/js/main.d2028b4e.chunk.js"
   ]
 }
