@@ -1,6 +1,66 @@
 @import "./App.scss";
 
-.login-form {
-  margin-left: 50px;
+.login-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  margin: 0 auto;
+  border: none;
+  outline: none;
+}
+
+.login-container img {
+  background-color: #ffbe85;
+  background: #161f27;
+  margin: 0 auto;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.input-box input {
+  padding: 0px 20px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #0f161a;
+  border-radius: 20px;
+}
+
+.input-box span {
+  margin-right: 8px;
+}
+
+.submitBtnForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.submitBtnForm .submitBtn {
+  border: 0;
+  outline: 0;
+  margin-top: 20px;
+  padding: 0px 20px;
+  width: 300px;
+  height: 40px;
+  border: 1px solid #c39f42;
+  background-color: #c39f42;
+  border-radius: 20px;
+}
+
+.submitBtn:hover {
+  color: red;
 }

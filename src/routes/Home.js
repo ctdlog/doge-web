@@ -15,7 +15,9 @@ function Home() {
 
   async function getData() {
     try {
-      const response = await axios.get("https://donghs1541.ddns.net:8080/");
+      const response = await axios.get(
+        "https://doge-shopping-api.herokuapp.com/"
+      );
       console.log(response);
     } catch (error) {
       console.error(error);

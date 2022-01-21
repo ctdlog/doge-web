@@ -19,9 +19,9 @@ function App() {
           <Home></Home>
         </Route>
 
-        {/* <Route path="/:id">
+        <Route exact path="/accountInfo">
           <AccountInfo></AccountInfo>
-        </Route> */}
+        </Route>
 
         <Route exact path="/account">
           <Account></Account>
@@ -29,10 +29,6 @@ function App() {
 
         <Route exact path="/login">
           <Login></Login>
-        </Route>
-
-        <Route exact path="/accountInfo">
-          <AccountInfo></AccountInfo>
         </Route>
       </Switch>
     </div>

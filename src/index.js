@@ -4,16 +4,12 @@ import "./index.css";
 import App from "./components/App";
 
 import { BrowserRouter } from "react-router-dom";
-import { CookiesProvider } from "react-cookie";
+// import { HashRouter as Router } from "react-router-dom";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <CookiesProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </CookiesProvider>
-  </React.StrictMode>,
+  <BrowserRouter basename={process.env.PUBLIC_URL}>
+    <App />
+  </BrowserRouter>,
 
   document.getElementById("root")
 );

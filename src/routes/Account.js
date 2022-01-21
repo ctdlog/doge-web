@@ -13,41 +13,25 @@ function Account() {
   const [phoneNumber, setPhoneNumber] = React.useState("");
   const [register, setRegister] = React.useState("");
 
-  // const onChange = (e) => {
-  //   const {
-  //     target: { value },
-  //   } = event;
-  //   if (name==="name") {
-
-  //   }
-  // };
-
-  const onNameHandler = (e) => {
-    setName(e.target.value);
-  };
-
-  const onEmailHandler = (e) => {
-    setEmail(e.target.value);
-  };
-
-  const onNicknameHandler = (e) => {
-    setNickname(e.target.value);
-  };
-
-  const onIdHandler = (e) => {
-    setId(e.target.value);
-  };
-
-  const onPasswordHandler = (e) => {
-    setPassword(e.target.value);
-  };
-
-  const onConfirmPasswordHandler = (e) => {
-    setConfirmPassword(e.target.value);
-  };
-
-  const onPhoneNumberHandler = (e) => {
-    setPhoneNumber(e.target.value);
+  const onChange = (event) => {
+    const {
+      target: { name, value },
+    } = event;
+    if (name === "name") {
+      setName(value);
+    } else if (name === "email") {
+      setEmail(value);
+    } else if (name === "nickName") {
+      setNickname(value);
+    } else if (name === "id") {
+      setId(value);
+    } else if (name === "password") {
+      setPassword(value);
+    } else if (name === "password2") {
+      setConfirmPassword(value);
+    } else if (name === "phoneNumber") {
+      setPhoneNumber(value);
+    }
   };
 
   const onIdCheckHandler = async (event) => {
@@ -94,11 +78,10 @@ function Account() {
 
   return (
     <div className="register">
-      <h3>회원가입</h3>
       <form>
         <div className="flex">
           <ul className="container">
-            <li className="item center">이름</li>
+            <li className="item center"></li>
             <li className="item">
               <input
                 type="text"
@@ -106,12 +89,12 @@ function Account() {
                 placeholder="이름을 입력하세요."
                 autofocus
                 required
-                onChange={onNameHandler}
+                onChange={onChange}
               />
             </li>
           </ul>
           <ul className="container">
-            <li className="item center">이메일</li>
+            <li className="item center"></li>
             <li className="item">
               <input
                 type="email"
@@ -119,12 +102,12 @@ function Account() {
                 placeholder="이메일을 입력하세요."
                 autofocus
                 required
-                onChange={onEmailHandler}
+                onChange={onChange}
               />
             </li>
           </ul>
           <ul className="container">
-            <li className="item center">닉네임</li>
+            <li className="item center"></li>
             <li className="item">
               <input
                 type="text"
@@ -132,20 +115,20 @@ function Account() {
                 placeholder="닉네임을 입력하세요."
                 autofocus
                 required
-                onChange={onNicknameHandler}
+                onChange={onChange}
               />
             </li>
             <li className="item"></li>
           </ul>
           <ul className="container">
-            <li className="item center">아이디</li>
+            <li className="item center"></li>
             <li className="item">
               <input
                 type="text"
                 name="id"
                 placeholder="아이디를 입력하세요."
                 required
-                onChange={onIdHandler}
+                onChange={onChange}
               />
             </li>
             <li className="item">
@@ -155,38 +138,38 @@ function Account() {
             </li>
           </ul>
           <ul className="container">
-            <li className="item center">비밀번호</li>
+            <li className="item center"></li>
             <li className="item">
               <input
                 type="password"
                 name="password"
                 placeholder="비밀번호를 입력하세요."
                 required
-                onChange={onPasswordHandler}
+                onChange={onChange}
               />
             </li>
           </ul>
           <ul className="container">
-            <li className="item center">비밀번호 확인</li>
+            <li className="item center"></li>
             <li className="item">
               <input
                 type="password"
                 name="password2"
-                placeholder="비밀번호를 입력하세요."
+                placeholder="비밀번호를 다시 입력하세요."
                 required
-                onChange={onConfirmPasswordHandler}
+                onChange={onChange}
               />
             </li>
           </ul>
           <ul className="container">
-            <li className="item center">전화번호</li>
+            <li className="item center"></li>
             <li className="item">
               <input
                 type="tel"
                 name="phoneNumber"
                 placeholder="전화번호를 입력하세요."
                 required
-                onChange={onPhoneNumberHandler}
+                onChange={onChange}
               />
             </li>
           </ul>

@@ -3,13 +3,15 @@ import React from "react";
 import { useHistory } from "react-router-dom";
 // import CryptoJS from "crypto-js";
 // import { useHistory } from "react-router-dom";
+import "../styles/scss/Login.scss";
 
 function Login() {
   const history = useHistory();
 
   const [loginId, setId] = React.useState("");
   const [password, setPassword] = React.useState("");
-  const SERVER_API = `${process.env.REACT_APP_SERVER_API}`;
+  // const SERVER_API = `${process.env.REACT_APP_SERVER_API}`;
+  const SERVER_API = "https://doge-shopping-api.herokuapp.com";
   // const history = useHistory();
 
   const onIdChangeHandler = (e) => {
@@ -49,25 +51,27 @@ function Login() {
   };
 
   return (
-    <div className="login-form">
-      <form action="/">
+    <div className="login-container">
+      <img
+        src="https://static01.nyt.com/images/2021/05/16/fashion/13DOGECOIN-1/13DOGECOIN-1-mediumSquareAt3X.jpg"
+        alt="도지"
+      />
+      <form action="/" className="login-form">
         <div className="input-box">
-          <span>ID</span>
-          <input
-            type="text"
-            placeholder="아이디를 입력해주세요."
-            onChange={onIdChangeHandler}
-          />
+          <input type="text" placeholder="ID" onChange={onIdChangeHandler} />
         </div>
-        <div>
-          <span>Password</span>
+        <div className="input-box">
           <input
             type="password"
-            placeholder="비밀번호를 입력해주세요."
+            placeholder="Password"
             onChange={onPasswordChangeHandler}
           />
         </div>
-        <input type="submit" value="제출하기" onClick={onSubmitHandler} />
+        <div className="submitBtnForm">
+          <button className="submitBtn" type="submit" onClick={onSubmitHandler}>
+            Log In
+          </button>
+        </div>
       </form>
     </div>
   );
